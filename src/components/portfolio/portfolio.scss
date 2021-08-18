@@ -3,22 +3,96 @@
 .portfolio{
     background-color: beige;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
 
     h1{
-        margin: 20px;
-        font-size: 35px;
+        position: absolute;
+        margin: auto;
+        line-height: 51px;
+        top: 20px;
+        left: 47vw;
+        font-size: 30px;
         font-weight: 700;
     }
 
-    ul{
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;
 
+    .arrow{
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left{
+            left: 200px;
+        }
+        &.right{
+            transform: rotateY(180deg);
+            right: 200px;
+        }
+    }
+
+    .slider{
+        position: absolute;
+        display: flex;
+        height: 50vh;
+        left: 0;
+        transition: all 0.5s ease-out;
+
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item{
+                width: 60vw;
+                height: 100%;
+                background-color: white;
+                border-radius: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .left{
+                flex: 0.5;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .leftContainer{
+                    width: 90%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    h2{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+
+            }
+            .right{
+                flex: 0.5;
+                background-color: palegoldenrod;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
     }
 
 }
