@@ -15,13 +15,13 @@ export default function Portfolio() {
         {
             id: "2",
             title: "MATLAB Escape Room",
-            desc: "I worked with a team to develop an interactive virtual escape room in MATLAB. I had created the infrastructure that compiles all the puzzles into one cohesive program, and also modeled the 3D parts that are used in the puzzles.",
-            img: "img2",
+            desc: "I worked with a team to develop an interactive virtual escape room in MATLAB. I had developed the infrastructure that compiles all the puzzles into one cohesive program, and also modeled the 3D parts that are used in the virtual room.",
+            img: "assets/escape_room.png",
         },
         {
             id: "3",
-            title: "Title3",
-            desc: "desc3",
+            title: "Drone Keyboard Control",
+            desc: "I developed a script in Python that allows the user to send ROS2 messages to control a drone's movement.",
             img: "img3",
         },
     ]
