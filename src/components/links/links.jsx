@@ -20,10 +20,6 @@ export default function links() {
                 <DescriptionIcon className = "icon" onClick={event => window.location.href="https://drive.google.com/file/d/1IISXIqvkPxBHkTvYrotDbar0Ig0FXo0w/view?usp=sharing"}/>
                 <span onClick={event => window.location.href="https://drive.google.com/file/d/1IISXIqvkPxBHkTvYrotDbar0Ig0FXo0w/view?usp=sharing"}> Resume</span>
             </div>
-            <div className="itemContainer">
-                <img src="/assets/gitlab.png" className = "icon" onClick={event => window.location.href="https://gitlab.com/alyssamui"} alt=""/>
-                <span onClick={event => window.location.href="https://gitlab.com/alyssamui"}> GitLab</span>
-            </div>
         </div>
     )
 }
