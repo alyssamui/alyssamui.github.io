@@ -22,13 +22,13 @@ export default function Portfolio() {
             id: "3",
             title: "Memory Card Game",
             desc: "I created the card game \"Concentration\" in Java. The game starts with a deck of cards flipped face down on a table. The player can flip over two cards at a time, and wins by matching all cards of the same value.",
-            img: "assets/card_game.png",
+            img: "assets/cardgame.jpg",
         },
         {
             id: "4",
             title: "Fishy Game",
             desc: "I created a simple game in Java where the player controls a fish that has to grow by each other randomly spawning fish. The game ends if the player is eaten by a larger fish or if the player becomes the largest fish in the game.",
-            img: "assets/fishy.png",
+            img: "assets/fishy.jpg",
         },
     ]
 
