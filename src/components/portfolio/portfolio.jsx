@@ -21,7 +21,7 @@ export default function Portfolio() {
         {
             id: "3",
             title: "Memory Card Game",
-            desc: "I created the card game \"Concentration\" in Java. The game starts with a deck of cards flipped face down on a table. The player wins by matching cards of the same value.",
+            desc: "I created the card game \"Concentration\" in Java. The game starts with a deck of cards flipped face down on a table. The player can flip over two cards at a time, and wins by matching all cards of the same value.",
             img: "assets/card_game.png",
         },
         {
