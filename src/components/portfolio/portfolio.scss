@@ -12,25 +12,37 @@
     h1{
         position: absolute;
         margin: auto;
+        top: 2%;
         line-height: 51px;
-        top: 20px;
-        left: 47vw;
         font-size: 30px;
         font-weight: 700;
     }
 
 
     .arrow{
-        height: 50px;
+        width: 5vw;
+        height: 5vh;
         position: absolute;
         cursor: pointer;
 
+        @include mobile {
+            width: 5vw;
+            height: 10vh;
+        }
+
         &.left{
             left: 200px;
+
+            @include mobile {
+                left: 0%;
+            }
         }
         &.right{
-            transform: rotateY(180deg);
             right: 200px;
+
+            @include mobile {
+                right: 0%;
+            }
         }
     }
 
@@ -41,11 +53,21 @@
         left: 0;
         transition: all 0.5s ease-out;
 
+        @include mobile {
+            height: 70vh;
+            justify-content: center;
+            overflow: hidden;
+        }
+
         .container{
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile {
+                overflow: hidden;
+            }
 
             .item{
                 width: 60vw;
@@ -55,6 +77,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile {
+                    width: 90%;
+                    height: 100%;
+                    margin: 5vh 0;
+                }
             }
 
             .left{

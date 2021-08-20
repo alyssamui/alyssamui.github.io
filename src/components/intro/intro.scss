@@ -1,53 +1,96 @@
+@import "../../global.scss";
+
 .intro{
     background-color: lightblue;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
 
     .left{
         flex: 0.4;
         overflow-y: hidden;
         padding-top: 3vh;
 
-
         .imgContainer{
-            width: 500px;   
+            width: 32vw;   
             height: auto;
             display: flex;
             justify-content: center;
+            overflow: auto;
             margin: auto;
             align-items: center;
-            overflow: auto;
             border: 6px solid lightcyan;
             border-radius: 50%;
+
+            @include mobile {
+                width: 45vw;
+                align-items: center;
+                justify-content: center;
+            }
 
             .img{
                 width: 90%;
                 height: 450px;
+
+                @include mobile{
+                    height: 25vh;
+                    width: auto;
+                }
             }
         }
     }
     .right{
         flex: 0.6;
         background-color: inherit;
+        align-items: center;
+        justify-content: center;
         position: relative;
+        height: 100%;
+
+        @include mobile {
+            overflow: hidden;
+            align-items: flex-start;
+        }
 
         .wrapper{
-            width: 100%;
-            height: calc(60vh);
+            width: 100vw;
+            height: 60vh;
             padding-left: 50px;
-            padding-top: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             overflow-y: none;
 
+            @include mobile {
+                align-items: flex-start;
+                display: flex;
+                width: 90vw;
+                height: 100%;
+                padding-left: 0;
+            }
+
             h1{
                 font-size: 27px;
                 margin: 10px 0;
+
+                @include mobile {
+                    margin: 0;
+                }
             }
             h2{
                 font-size: 20px;
                 margin: 20px 0px;
                 width: 800px;
+
+                @include mobile {
+                    width: 90vw;
+                    font-size: 2vh;
+                    padding: 0;
+                }
             }
         }
     }

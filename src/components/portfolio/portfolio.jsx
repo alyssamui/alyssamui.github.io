@@ -1,5 +1,6 @@
 import "./portfolio.scss"
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { useState } from "react";
 
 export default function Portfolio() {
@@ -29,11 +30,11 @@ export default function Portfolio() {
             title: "Fishy Game",
             desc: "I created a simple game in Java where the player controls a fish that has to grow by each other randomly spawning fish. The game ends if the player is eaten by a larger fish or if the player becomes the largest fish in the game.",
             img: "assets/fishy.JPG",
-        }
+        },
     ]
 
     const handleClick = (dir)=>{
-        dir === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2) : 
+        dir === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length-1) : 
         setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     }
     return (
@@ -58,7 +59,7 @@ export default function Portfolio() {
                 </div>))}
             </div>
             <ArrowBackIosIcon fontSize='large' className="arrow left" alt="" onClick={()=>handleClick("left")}/>
-            <ArrowBackIosIcon fontSize='large' className="arrow right" alt=""onClick={()=>handleClick("right")}/>
+            <ArrowForwardIosIcon fontSize='large' className="arrow right" alt=""onClick={()=>handleClick("right")}/>
         </div>
     )
 }

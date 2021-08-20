@@ -11,7 +11,7 @@
 
 
     .wrapper{
-        padding: 10px 20px;
+        padding: 1.5vh 2.5vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -22,17 +22,25 @@
                 font-weight: 700;
                 text-decoration: none;
                 color: inherit;
-
+                
+                @include mobile {
+                    font-size: 5vw;
+                }
             }
         }
 
         .right{
+
             .label{
                 margin: 15px;
                 font-size: 25px;
                 font-weight: 700;
                 text-decoration: none;
                 color: inherit;
+
+                @include mobile {
+                    font-size: 5vw;
+                }
             }
         }
     }
