@@ -11,7 +11,7 @@ export default function links() {
                 <GitHubIcon className = "icon" onClick={event => window.location.href="https://github.com/alyssamui"}/>
                 <span onClick={event => window.location.href="https://github.com/alyssamui"}> GitHub </span>
 
-            </div> 
+            </div>  
             <div className="itemContainer">
                 <LinkedInIcon className = "icon" onClick={event => window.location.href="https://www.linkedin.com/in/alyssamui/"}/>
                 <span onClick={event => window.location.href="https://www.linkedin.com/in/alyssamui/"}> LinkedIn</span>
