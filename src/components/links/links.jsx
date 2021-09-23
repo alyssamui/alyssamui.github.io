@@ -17,8 +17,8 @@ export default function links() {
                 <span onClick={event => window.location.href="https://www.linkedin.com/in/alyssamui/"}> LinkedIn</span>
             </div>
             <div className="itemContainer">
-                <DescriptionIcon className = "icon" onClick={event => window.location.href="https://drive.google.com/file/d/1ck5UJMx61zgifux5TwBip8_wUEvYQ4YY/view?usp=sharing"}/>
-                <span onClick={event => window.location.href="https://drive.google.com/file/d/1ck5UJMx61zgifux5TwBip8_wUEvYQ4YY/view?usp=sharing"}> Resume</span>
+                <DescriptionIcon className = "icon" onClick={event => window.location.href="https://drive.google.com/file/d/167tBxaM_mAkXuq2_mkjybruoYxuTxNhY/view?usp=sharing"}/>
+                <span onClick={event => window.location.href="https://drive.google.com/file/d/167tBxaM_mAkXuq2_mkjybruoYxuTxNhY/view?usp=sharing"}> Resume</span>
             </div>
         </div>
     )
