@@ -15,9 +15,9 @@ export default function Portfolio() {
         },
         {
             id: "2",
-            title: "MATLAB Escape Room",
-            desc: "I worked with a team to develop an interactive virtual escape room in MATLAB. I had developed the infrastructure that compiles all the puzzles into one cohesive program, and also modeled the 3D parts that are used in the virtual room.",
-            img: "assets/escape_room.png",
+            title: "Image Processor",
+            desc: "I created an image proccessor in Java that can edit images with a variety of different filter options.",
+            img: "assets/image_processing.png",
         },
         {
             id: "3",
